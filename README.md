@@ -4,14 +4,13 @@
 ![Prometheus](https://img.shields.io/badge/Monitoring-Prometheus-red)
 ![Grafana](https://img.shields.io/badge/Dashboards-Grafana-orange)
 
-**Target audience:** Recruiters / Hiring Managers  
-**Style:** Resume-focused • Interview-ready • ATS-friendly
+
 
 This repository provides a minimal, reproducible **observability stack** using **Prometheus** for metrics scraping and **Grafana** for visualization—bootstrapped with **Docker Compose** and a working Prometheus scrape configuration. It also includes **Node Exporter** to expose host-level metrics.
 
 ---
 
-## What this project demonstrates (resume-focused)
+## What this project demonstrates 
 
 - Provisioned a containerized monitoring stack: **Prometheus + Grafana + Node Exporter**
 - Configured Prometheus to scrape:
@@ -20,7 +19,7 @@ This repository provides a minimal, reproducible **observability stack** using *
 - Delivered a repeatable local setup using **Docker Compose** (one command to run)
 - Provides a baseline template that can be extended to monitor apps, Docker services, and cloud workloads
 
-**ATS keywords:** Observability, Monitoring, Metrics, Prometheus, Grafana, Node Exporter, Docker Compose, SRE, DevOps, Dashboards, Alerting (extensible).
+**Keywords:** Observability, Monitoring, Metrics, Prometheus, Grafana, Node Exporter, Docker Compose, DevOps, Dashboards, Alerting (extensible).
 
 ---
 
@@ -34,7 +33,7 @@ Prometheus_and_Graphana-main/
 
 ---
 
-## Architecture (interview explanation)
+## Architecture
 
 1. **Node Exporter** exposes machine/system metrics at `:9100` (CPU, memory, disk, network).
 2. **Prometheus** scrapes metrics every **5 seconds** and stores them in its time-series database.
@@ -117,7 +116,7 @@ A common dashboard is **Node Exporter Full** (Grafana dashboard ID: **1860**).
 
 ---
 
-## Resume bullet points (copy/paste)
+## Points
 
 - Deployed a containerized **Prometheus + Grafana observability stack** using **Docker Compose**, enabling repeatable local monitoring for applications and infrastructure.  
 - Configured Prometheus scrape jobs and intervals to collect metrics from both **Prometheus server** and **Node Exporter**, supporting host-level performance visibility (CPU/memory/disk/network).  
@@ -125,15 +124,6 @@ A common dashboard is **Node Exporter Full** (Grafana dashboard ID: **1860**).
 
 ---
 
-## Next improvements (to make it more production-like)
-
-- Add **Alertmanager** + alert rules (SLO/SLA alerts)
-- Persist volumes for Prometheus/Grafana data
-- Add service discovery (Docker / Kubernetes)
-- Add a sample app (FastAPI) with `/metrics` using `prometheus_client`
-- Add provisioning for Grafana datasource + dashboards (as code)
-
----
 
 ## Author
 
